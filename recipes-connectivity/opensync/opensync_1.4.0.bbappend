@@ -1,4 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+  
+CMF_GIT_MASTER_BRANCH_dunfell = "master"
 
 CORE_URI = "git://git@github.com/plume-design/opensync.git;protocol=${CMF_GIT_PROTOCOL};branch=osync_1.4.0.1;name=core;destsuffix=git/core \
             file://0007-Fix-conflict-with-yocto-kernel-tools-kconfiglib.patch \
@@ -20,4 +22,3 @@ DEPENDS_remove = "hal-wifi"
 DEPENDS_append = " rdk-logger hal-wifi-turris"
 
 RDK_CFLAGS += " -D_PLATFORM_TURRIS_"
-
