@@ -6,6 +6,8 @@ SYSTEMD_TOOLS = "systemd-analyze systemd-bootchart"
 # systemd-bootchart doesn't currently build with musl libc
 SYSTEMD_TOOLS_remove_libc-musl = "systemd-bootchart"
 
+#Added for demo
+
 IMAGE_INSTALL += " packagegroup-turris-core \
     ${SYSTEMD_TOOLS} \
     linux-firmware-ath10k \
